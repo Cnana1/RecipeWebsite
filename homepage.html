@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe & Food Blog</title>
+
+    <style>
+        #top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        nav ul,
+        #jump-to ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        body {
+            padding-top: 120px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            scroll-margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <header>
+        <div id="top-bar">
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home / Blog</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                </ul>
+            </nav>
+
+            <!-- Jump-To Links on Page -->
+            <section id="jump-to">
+                <ul>
+                    <li><a href="#featured-article">Featured Article</a></li>
+                    <li><a href="#trending-restaurants">Trending Restaurants</a></li>
+                    <li><a href="#trending-recipes">Trending Recipes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+        </div>
+
+        
+    </header>
+
+    
+
+    <!-- Hero Section / Mission -->
+    <section id="hero">
+        <h1>Welcome to the Ultimate Food & Recipe Blog</h1>
+        <p>Discover trending recipes, restaurants, and foodie experiences!</p>
+        <img src="" alt="Featured dish image">
+    </section>
+
+    <!-- Featured Article Section -->
+    <section id="featured-article">
+        <h2>Featured Food Spotlight</h2>
+        <article>
+            <h3>The Rise of Gourmet Street Food</h3>
+            <img src="" alt="Street food market image">
+
+            <p>
+                Street food has evolved from simple snacks to gourmet culinary
+                experiences. Across major cities, chefs are redefining comfort food
+                with creative twists and bold flavors.
+            </p>
+
+            <p>
+                From artisan tacos to fusion ramen burgers, the trend continues
+                to grow as food lovers search for unique dining adventures.
+            </p>
+
+            <p>
+                In this article, we explore the top cities leading the movement
+                and the must-try dishes of the year.
+            </p>
+
+            <a href="full-article.html">Read Full Article</a>
+        </article>
+    </section>
+
+
+
+    <!-- Trending Restaurants Section -->
+    <section id="trending-restaurants">
+        <h2>Trending Restaurants</h2>
+        <article>
+            <h3>Restaurant/Food 1</h3>
+            <img src="" alt="Restaurant or dish 1">
+            <p>Brief description of the trend...</p>
+            <a href="restaurant1.html">Explore</a>
+        </article>
+        <article>
+            <h3>Restaurant/Food 2</h3>
+            <img src="" alt="Restaurant or dish 2">
+            <p>Brief description of the trend...</p>
+            <a href="restaurant2.html">Explore</a>
+        </article>
+    </section>
+
+     <!-- Trending Recipes Section -->
+    <section id="trending-recipes">
+        <h2>Trending Recipes</h2>
+        <article>
+            <h3>Recipe Title 1</h3>
+            <img src="" alt="Dish image 1">
+            <p>Short description of this recipe...</p>
+            <a href="recipe1.html">Read More</a>
+        </article>
+        <article>
+            <h3>Recipe Title 2</h3>
+            <img src="" alt="Dish image 2">
+            <p>Short description of this recipe...</p>
+            <a href="recipe2.html">Read More</a>
+        </article>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn about our mission to bring you the best recipes and restaurant trends!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have questions or suggestions? Reach out!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Recipe & Food Blog. All rights reserved.</p>
+        <p><a href="#hero">Back to Top ↑</a></p>
+    </footer>
+
+</body>
+</html>
