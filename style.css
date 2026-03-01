@@ -1,0 +1,90 @@
+/* Default (Light Mode) */
+.page {
+    --bg: #FFF8F0;
+    --text: #2F2F2F;
+    --primary: #6B8E74;
+    --card: #FFFFFF;
+
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Checked */
+.page:has(#dark-toggle:checked) {
+    --bg: #1E1E1E;
+    --text: #F5F5F5;
+    --primary: #4F6F52;
+    --card: #2A2A2A;
+}
+
+
+/* Hide checkbox */
+#dark-toggle {
+    display: none;
+}
+
+/* Toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    background: var(--card); 
+    color: var(--text);        
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+#dark-toggle + .theme-toggle::before {
+    content: "🌙";
+}
+
+/* Change icon in dark mode */
+#dark-toggle:checked + .theme-toggle::before {
+    content: " ☀️";
+}
+
+/* Ensure header and top-bar span full width */
+header {
+    width: 100%;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    z-index: 9998;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+nav ul,
+#jump-to ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+body {
+    padding-top: 120px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 120px;
+}
