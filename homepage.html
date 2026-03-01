@@ -4,38 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>Recipe & Food Blog</title>
 
-    <style>
-        #top-bar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-
-        nav ul,
-        #jump-to ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            list-style: none;
-        }
-
-        body {
-            padding-top: 120px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section {
-            scroll-margin-top: 120px;
-        }
-    </style>
+    
 </head>
-<body>
 
+<body class="page">
+    <input type="checkbox" id="dark-toggle">
+    <label for="dark-toggle" class="theme-toggle"></label>
     <!-- Main Navigation -->
     <header>
         <div id="top-bar">
@@ -56,9 +33,6 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </section>
-        </div>
-
-        
     </header>
 
     
@@ -93,7 +67,7 @@
                 and the must-try dishes of the year.
             </p>
 
-            <a href="full-article.html">Read Full Article</a>
+            <a href="full-article.html">Read Full Article or something similar</a>
         </article>
     </section>
 
@@ -162,6 +136,6 @@
         <p>&copy; 2026 Recipe & Food Blog. All rights reserved.</p>
         <p><a href="#hero">Back to Top ↑</a></p>
     </footer>
-
+    </div>
 </body>
 </html>
