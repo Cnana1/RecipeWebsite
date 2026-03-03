@@ -1,0 +1,69 @@
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style filter buttons */
+label {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* Make button orange when selected */
+input[type="radio"]:checked + label {
+    background-color: lightcoral;
+}
+
+/* Hide all recipe cards by default */
+.recipes a {
+    display: none;
+}
+
+/* Show "All" recipes when filter-all is checked */
+#filter-all:checked ~ .recipes a {
+    display: block;
+}
+
+/* Show only Italian when filter-italian is checked */
+#filter-italian:checked ~ .recipes a.italian {
+    display: block;
+}
+
+/* Show only Mexican when filter-mexican is checked */
+#filter-mexican:checked ~ .recipes a.mexican {
+    display: block;
+}
+
+/* Show only Asian when filter-asian is checked */
+#filter-asian:checked ~ .recipes a.asian {
+    display: block;
+}
+
+/* Recipe grid layout */
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipes div {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.recipes div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.recipes img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
