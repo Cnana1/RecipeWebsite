@@ -327,7 +327,7 @@ form textarea {
 @media (max-width: 600px) {
 
     body {
-        padding-top: 200px;
+        padding-top: 70px;
     }
     .theme-toggle {
         right: 10px;
