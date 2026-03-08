@@ -401,3 +401,13 @@ hr.gradient {
     gap: 10px; /* space between buttons */
     flex-wrap: wrap; /* helps on mobile */
 }
+
+.animated-text {
+    animation: colorShift 3s infinite;
+}
+
+@keyframes colorShift {
+    0% { color: var(--primary); }
+    50% { color: lightcoral; }
+    100% { color: var(--primary); }
+}
