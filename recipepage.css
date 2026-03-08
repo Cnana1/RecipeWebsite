@@ -92,6 +92,26 @@ input[type="radio"]:checked + label {
     object-fit: cover;
 }
 
+/* =========================
+   Card Layout (Articles + Recipes)
+========================= */
+
+.card {
+    background: var(--primary);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     
+}
+
+
+/* Hover animation */
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(240, 128, 128, 0.7);
+}
 
 /* Hide checkbox */
 #dark-toggle {
@@ -200,28 +220,6 @@ nav a::after,
 nav a:hover::after,
 #jump-to a:hover::after {
     width: 100%;
-}
-
-
-/* =========================
-   Card Layout (Articles + Recipes)
-========================= */
-
-.card {
-    background: var(--primary);
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-     
-}
-
-
-/* Hover animation */
-
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 20px rgba(240, 128, 128, 0.7);
 }
 
 /* =========================
