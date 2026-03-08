@@ -172,7 +172,14 @@ nav a:hover::after,
     float: left;
     margin-right: 12px;
     margin-bottom: 8px;
-    border-radius: 8px;
+    border-radius: 8px; 
+}
+
+.trend-recipe {
+    max-width: 175px;
+    height: 175px; 
+    position: relative;
+    bottom: 70px;     
 }
 
 .card p {
