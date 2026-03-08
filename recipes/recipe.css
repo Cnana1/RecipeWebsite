@@ -86,7 +86,6 @@
 }
 
 .ingredients-list li::before {
-    content: "✓ ";
     color: var(--primary);
     font-weight: bold;
     margin-right: 10px;
