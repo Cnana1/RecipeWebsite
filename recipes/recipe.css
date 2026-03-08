@@ -94,12 +94,6 @@ label {
     border-bottom: none;
 }
 
-.ingredients-list li::before {
-    color: var(--primary);
-    font-weight: bold;
-    margin-right: 10px;
-}
-
 /* Instructions Section */
 .instructions-section {
     margin-bottom: 30px;
