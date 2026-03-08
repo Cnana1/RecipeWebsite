@@ -65,8 +65,6 @@
     color: var(--text);
 }
 
-<<<<<<< Updated upstream
-=======
 .ingredients-list label {
     display: flex;
     align-items: center;
@@ -83,7 +81,6 @@
     accent-color: var(--primary);
 }
 
->>>>>>> Stashed changes
 .ingredients-list li:last-child {
     border-bottom: none;
 }
